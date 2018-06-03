@@ -1,0 +1,36 @@
+<p class="intro">
+  There is a project with example of polling.
+  <br> Main Window is divided to two half-windows.
+  <br> In first you can see all images with their times to live.
+  <br> And in second there are text posts with their times to live too.
+  <br> When Time to live of any object is expired, this object will be removed from screen.
+  <br> Check of all objects timeliving making every 1 second.
+  <br> Let's enjoy :)
+  <br>
+  <br> P.S. Sorry for poor html-view. But I have spent all time to this task.
+  <br> If you will say to create a pretty html-view, I will do this.
+  <br>
+</p>
+
+<div class="row main" style="max-height: 100%">
+  <div class="col-xs-6">
+    <div class="col-xs-6">
+      <div *ngFor="let img of images">
+        <img [src]='img.imageData' class="img-thumbnail"> Living time: {{img.livetime}}
+      </div>
+    </div>
+
+  </div>
+  <div class="col-xs-6">
+    <div *ngFor="let post of posts">
+      <p>
+        {{post.post}}
+      </p>
+      <p>
+        Living time:{{post.livetime}}
+      </p>
+    </div>
+  </div>
+
+
+</div>

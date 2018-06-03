@@ -1,0 +1,11 @@
+.intro {
+    border-bottom: 2px;
+    border-bottom-style: double;
+    text-align: center;
+}
+
+.img-thumbnail {
+    width:200px ;
+    height:200px
+}
+
